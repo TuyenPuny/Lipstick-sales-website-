@@ -1,0 +1,438 @@
+
+* {
+    margin: 0px auto;
+    max-width: 1500px;
+  }
+  
+  body {
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .header {
+      background-color: #ec6d6d;
+      text-align: center;
+      margin: 0;
+  }
+  nav{
+      text-align: center;
+      font-size: 20px;
+      background:  #ec6d6d; /*tô màu cho menu cha*/
+  }
+  nav ul{
+      display: flex;
+  }
+  nav> ul li{
+      list-style: none; /* bỏ dấu chấm mặc định của li */
+  }
+  nav> ul li a{
+      display: block;
+      padding: 0 15px;
+      line-height: 50px;
+      color: #fcf9f6;
+      text-decoration: none;
+  }
+  /* Khi hover đến li, tô màu cho thẻ a */
+  nav ul li:hover>a{
+      background: rgb(243, 239, 239);
+      opacity: .7;
+      color: #ec6d6d;
+  }
+  /*menu con*/
+  /*Ẩn các menu con cấp 1,2,3*/
+  nav li ul{
+      display: none;
+      min-width: 250px;
+      position: absolute;
+  }
+  nav li>ul li{
+      width: 100%;
+      border: none;
+      border-bottom: 1px solid #ccc;
+      background: #999;
+      text-align: left;
+  }
+  
+  /*khi hover thì hiện menu con*/
+  nav  li:hover > ul{
+      display:  block;
+  }
+  /*Hiển thị menu con cấp 2,3,4 bên cạnh phải*/
+  nav > ul li > ul li >ul{
+      margin-left: 220px;
+      margin-top: -50px;
+  }
+  /*thanh tìm kiếm*/
+  .search{
+    width: 400px;
+    position: relative;
+    display: flex;
+  }
+  .searchTerm {
+    width: 100%;
+    border: 2px solid #faa373;
+    border-right: none;
+    padding: 5px;
+    height: 30px;
+    border-radius: 5px 0 0 5px;
+    outline: none;
+    color: #9DBFAF;
+    border-radius: 20px;
+    font-size: 15px;
+    }
+  
+    .searchTerm:focus{
+    color: #faa373;
+    }
+  
+    .searchButton {
+    width: 50px;
+    height: 42px;
+    border: 1px solid #faa373;
+    background: #faa373;
+    text-align: center;
+    color: #fff;
+    border-radius: 0 5px 5px 0;
+    cursor: pointer;
+    font-size: 15px;
+    border-radius: 20px;
+    }
+    .footer {
+        background-color:   #ec6d6d;
+        text-align: center;
+        padding: 10px;
+      }
+      #phongnen{
+        text-align: center;
+        width: 50%;
+        position:inherit;
+                top:-10px;
+                left:50px;
+                font-size: 25px;
+        text-align: left;
+        background-color: #ffffffee;
+    }
+    #phongnen1{
+        text-align: center;
+        width: 50%;
+        position:inherit;
+                top:-10px;
+                left:50px;
+                font-size: 22px;
+        text-align: left;
+        background-color:#cdcdcdee;
+    }
+    #phongnen2{
+        text-align: center;
+        width: 700px;
+        position:inherit;
+                top:-10px;
+                left:50px;
+                font-size: 35px;
+        text-align: left;
+    }
+    #tatca{
+        margin-top: auto;
+    }
+    #phanchia1{
+        background:#ffffff;
+        text-align: center;
+    }
+    .thanhcuon{
+        width: 350px;
+        height: 600px;
+        border: 1px solid #333;
+        overflow-y: scroll;
+    }
+    .button{
+        width: 300px;
+height: 60px;
+margin-top:10px;
+margin-bottom: 30px;
+background:#FFA07A;
+border:none;
+outline:none;
+color:#333;
+font-weight: bold;
+border-radius: 20px;
+transition:0.4s;
+font-size: 25px;
+    }
+    .button2{
+        width: 200px;
+height: 40px;
+margin-top:3px;
+margin-bottom: 30px;
+background:#FA8072;
+border:none;
+outline:none;
+color:#fff;
+font-weight: bold;
+border-radius: 20px;
+transition:0.4s;
+font-size: 25px;
+text-decoration: none;
+    }
+    .mySlides3 {display:none; width:100%}
+    .display-container{position:relative; width: 500px; height: 500px;}
+    .button-left{left:1%; font-size:20px}
+    .button-right{right:1%; font-size:20px }
+    .image-button{border:none;display:inline-block;padding:10px;height:50px;vertical-align:middle;overflow:hidden; color:#fff;background:#000;position:absolute;top:calc(50% - 25px); opacity:0.5;}
+    .image-button:hover{color:#000;background:#ccc;}
+    .badge {text-align:center; margin-bottom:16px; font-size:20px;position:absolute;bottom:0;}
+    .badge-white{color:#000!important;background-color:#333!important}
+    .image-badge {display:inline-block;border-radius:50%;height:14px;width:14px; border:1px solid #000;}
+    .image-badge:hover{background:#fff;}
+    .shopping{
+        border-radius: 10px;
+        text-align: center;
+        color:white;
+        background-color: orangered;
+        width: 250px;
+        padding:10px;
+        height:20px;
+        font-size: 20px;
+    }
+    .shopping:hover{
+
+        background-color: rgb(240, 240, 21);
+        text-align: center;
+        color:orangered;
+        font-size: 20px;
+        cursor: pointer;
+        box-shadow: 0 0 3px forestgreen;
+    }
+    .shopping2{
+        border-radius: 10px;
+        text-align: center;
+        color:white;
+        background-color: orangered;
+        width: 250px;
+        padding:10px;
+        height:20px;
+        font-size: 20px;
+    }
+    .shopping2:hover{
+        background-color: rgb(240, 240, 21);
+        text-align: center;
+        color:orangered;
+        font-size: 20px;
+        cursor: pointer;
+        box-shadow: 0 0 3px forestgreen;
+    }
+    p img{
+        border:2px solid black;
+    }
+    p img:hover{
+        border:2px solid red;
+    }
+    table tr td{
+        margin: 20px;
+    }
+    ul.products{
+   
+        list-style: none;
+        display:flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        width: 1200px;
+    }
+    ul.products li{
+        flex-basis: 25%;
+        padding-left: 15px;
+        padding-right: 15px;
+        box-sizing: border-box;
+        margin-bottom: 15px;
+    }
+    ul.products li img{
+        max-width: 100%;
+        height:auto;
+    }
+    ul.products li .product-top{
+        position:relative;
+        overflow:hidden;
+    }
+    ul.products li:hover .product-top .product-thumb {
+      display:block;
+    }
+    ul.products li .product-top .product-thumb img{
+        filter:opacity(80%);
+        width: 300px;
+        height: 250px;
+    }
+    ul.products li .product-top .product-thumb img{
+        display:block;/* bỏ khoảnh cách giữa hình ảnh và mua ngay*/
+    }
+    ul.products li .product-top a.buy-now{
+        text-transform: uppercase;
+        text-decoration: none;/*-- bỏ gạch chân cho liên kết-*/
+        text-align: center;
+        display:block;
+        background-color: #fb5279;
+        color:#fff;
+        padding: 10px 0px;
+        position:absolute;
+        bottom:-38px;
+        width:100%;
+        transition: 0.5s ease-in-out;/* thời gian xuất hiện mua ngay*/
+        opacity:0.85; /*làm trong background cho mua ngay*/
+    }
+    ul.products li:hover a.buy-now{
+        bottom:0px;
+    }
+    ul.products li .product-info{
+        padding: 10px 0px;
+    }
+    ul.products li .product-info a{
+       display:block;
+       text-decoration: none;
+    }
+    ul.products li .product-info a.product-cat{
+        font-size: 11px;
+        text-transform: uppercase;
+        color:#e32525;
+        padding: 3px 10px;
+    }
+    ul.products li .product-info a.product-name{
+        font-size: 20px ;
+        color: #f40909;
+        padding: 3px 0px;
+        text-align: center;
+    }
+    ul.products li .product-info a.product-price{
+        color:#ee1519;
+        padding:2px  0px;
+        font-size: 600;
+    }
+    a{
+        text-decoration: none;
+      }
+    .thongtin{
+        padding: 30px;
+        color: #e32525;
+    }
+    #buy-amount button{
+        width: 35px;
+        height: 35px;
+        outline: none;
+        background: none;
+        border: 1px solid #333;
+        cursor: pointer;
+    }
+    #buy-amount button:hover{
+        color: #333;
+    }
+    #amount{
+        width: 40px;
+        height: 35px;
+        text-align: center;
+        border: 1px solid #ececec;
+    }
+    footer{
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        background-color: #3c0303;
+      }
+      footer .col{
+        color:#ade9ff;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        margin-bottom: 20px;
+        padding-left: 20px;
+       
+      }
+      footer .col:hover{
+        color:#c6c9f5;
+  
+      }
+      
+      footer .logo{
+        margin-bottom: 30px;
+      }
+      footer h4{
+        font-size: 14px;
+        padding-bottom: 15px;
+      }
+      footer p{
+        font-size: 16px;
+        margin: 0 0 8px 0;
+        color:beige;
+      }
+      footer a{
+        font-size:  16px;
+        text-decoration: none;
+        color: #f6f6f8;
+        margin: 10px;
+      }
+      footer h4{
+        font-size:  20px;
+        text-decoration: none;
+        color: #ee45e2;
+      text-align: center;
+      }
+      footer h4:hover{
+        color:#e00cb9;
+      }
+      footer .follow .icon {
+        padding-right: 4px;
+      color:#fff;
+      width:50px;
+      height:40px;
+      }
+      footer .install .row img{
+        border: 1px solid #088178;
+        border-radius: 8px;
+        width:90px;
+        height:60px;
+      }
+      footer .install img{
+        margin:  10px 0 15px 0;
+      }
+      footer .met img{
+       width:80px;
+       height:60px;
+      }
+      footer .copyright{
+      width:100%;
+        text-align: center;
+      }
+      footer a:hover{
+        color:#07a4f8;
+      }
+      footer p:hover{
+        color:#07a4f8;
+      }
+      #number button{
+        width: 35px;
+        height: 35px;
+        font-size: 1.5em;
+        line-height: 20px;
+        border-radius: 10px;
+        outline: none;
+        border: none;
+        color: black;
+        cursor: pointer;
+        background: transparent;
+        box-shadow: inset -2px -2px 2px rgba(221, 140, 140, 0.2),
+                    inset 2px 5px 15px rgba(217, 57, 57, 0.5);
+    }
+    #number button:active{
+        box-shadow: inset -2px -2px 2px rgba(221, 140, 140, 0.2),
+        inset 2px 5px 15px rgba(217, 57, 57, 0.5);
+    }
+    #number input{
+        border-radius: 10px;
+        outline: none;
+        border: none;
+        width: 100px;
+        text-align: center;
+        font-size: 1.5em;
+        color: black;
+        margin: 0;
+        background: transparent;
+        box-shadow: inset -2px -2px 2px rgba(221, 140, 140, 0.2),
+        inset 2px 5px 15px rgba(217, 57, 57, 0.5);
+    }
+      
+      

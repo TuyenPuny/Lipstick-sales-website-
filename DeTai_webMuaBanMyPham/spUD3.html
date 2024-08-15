@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trang chủ</title>
+    <link rel="stylesheet" type="text/css" href="ttsp.css">
+    <link rel="stylesheet" type="text/css" href="footer.css">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css">
+</head>
+<body>
+    <div class="header">
+        <img src="img/doi4.PNG">
+        <nav>
+            <ul>
+                <li><a href="Trang chủ.html" title="Trang chủ"><i class="far fa-home"></i>  Trang chủ</a></li>
+                <li><a href="danh sách sản phẩm 1.html" title="Sản phẩm"><i class="far fa-shopping-cart"></i>    Sản phẩm</a>
+                    <ul>
+                        <li><a href="son thỏi.html">Son thoi</a></li>
+                        <li><a href="son kem.html">Son kem</a></li>
+                        <li>
+                            <a href="son dưỡng.html">Son dưỡng </a>
+                        </li>
+                        <li><a href="Son tint.html">Son tint</a></li>
+                    </ul>
+                </li>
+                <li><a href="ChinhSachDamBao.html" title="Ưu đãi"><i class="far fa-gift"></i>Chính sách</a>
+                    <ul>
+                        <li><a href="ChinhSachDamBao.html" title="Mã khuyến mãi">Đổi trả tiền</a></li>
+                        <li><a href="ChinhSachDamBao.html" title="Đánh giá">Điều khoản</a></li>
+                        <li><a href="ChinhSachDamBao.html" title="Đánh giá">Bảo mật</a></li>
+                    </ul>
+                </li>
+                <li><a href="LienHe.html" title="Liện hệ"><i class="far fa-phone"></i>  Liên hệ</a>
+                    <ul>
+                        <li><a href="LienHe.html" >Sđt: 03356863**</a></li>
+                        <li><a href="LienHe.html" >Gmai: 03356863**</a></li>
+                        <li><a href="LienHe.html" >Địa chỉ: 140 Lê Trọng Tấn</a></li>
+                    </ul>
+                </li>
+                <li><a href="formDki.html" ><i class="far fa-address-card"></i>  Đăng ký</a></li>
+                <li>
+                    <form action="" class="search" method="post">
+                        <input type="text" class="searchTerm" placeholder="Bạn muốn tìm gì?">
+                        <button type="submit" class="searchButton">
+                            <i class="far fa-search"></i>
+                        </button>
+                    </form>
+                </li>
+                <li><a href="" ><i class="far fa-shopping-cart"></i> </a></li>
+            </ul>
+        </nav>
+    </div>
+    <table>
+        <tr>
+            <td width="550px">
+                <img src="imgSp/sp1.jpg" width="500px" id="main-img">
+                <p>
+                    <img src="imgSp/sp1.jpg" width="100px">
+                    <img src="imgSp/sp3.png" width="100px" >
+                    <img src="imgSp/sp4.webp" width="100px">
+                    <img src="imgSp/sp5.webp" width="100px">
+                </p>
+                <script src="https://code.jquery.com/jquery-3.5.0.min.js"></script>
+                <script>
+                    $(() => {
+                        $('p img').click(function(){
+                            let imgPath = $ (this).attr('src');
+                            $('#main-img').attr('src', imgPath)
+                        })
+                    })
+                </script>
+            </td>
+            <td width="450px">
+                <h1>Son Kem Black Rouge Double Layer Over Velvet Ver.2 31.6g</h1>
+                <a class="a-sao"> &#11088;&#11088;&#11088;&#11088;&#11088; 870 đánh giá</a>
+                <h2><del>359.000đ</del> chỉ còn 295.999đ</h2>
+                <table>
+                    <tr>
+                        <td width="100px">Deal sốc:</td>
+                        <td>Mua để nhận quà</td>
+                    </tr>
+                    <tr>
+                        <td>Bảo hiểm:</td>
+                        <td>Bảo hiểm quyền lợi têu dùng</td>
+                    </tr>
+                    <tr>
+                        <td>Màu sắc:</td>
+                        <td>
+                            <div class="col-md-6">
+                                <select id="size" name="size" class="form-control" style="height:30px">
+                                    <option>Màu AL1</option>
+                                    <option>Màu AL2</option>
+                                    <option>Màu AL3</option>
+                                    <option>Màu AL4</option>
+                                </select>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Số lượng:</td>
+                        <td>
+                            <div id="number">
+                                <button id="sub">-</button>
+                                <input type="text" id="qtyBox" readonly="" value="0">
+                                <button id="add">+</button>
+    
+                                <script src="jsSoLuong.js"></script>
+                            </div>
+                        </td>
+                    </tr>
+                </table>
+                <div class="shopping"><a href="themvaogiohang.html">Thêm vào giỏ hàng </a></div><br>
+                <div class="shopping"><a href="Trang chủ.html">Mua ngay</a> </div>
+            </td>
+        </tr>
+    </table>
+
+    <br>
+    <div class="center">
+    <canvas id="myCanvas" width="350" height="50"></canvas>
+        <script>
+            var canvas = document.getElementById("myCanvas");
+            var ctx = canvas.getContext('2d');
+            ctx.font = "30px arial"; 
+            var gradient = ctx.createLinearGradient(0, 0, 100, 150); 
+            gradient.addColorStop(0, "#FFCCFF");
+            gradient.addColorStop(1, "#FF9966"); 
+            ctx.fillStyle = gradient;
+            ctx.fillText("SẢN PHẨM LIÊN QUAN", 10, 50); 
+        </script></div><br>
+    <ul class="products">
+        <li> 
+            <div class="product-item">
+                <div class="product-top">
+                    <a href="mon25.html" class="product-thumb">
+                        <img src="img/son thỏi.png" alt="">
+                    </a>
+                    <!--Mua ngay -->
+                    <a href="mon25.html" class="buy-now">Mua ngay </a>
+                </div>
+                <div class="product-info">
+                    <a href="mon26.html" class="product-cat"> blackground </a>
+                    <a href="mon25.html" class="product-name"><p>Son thỏi Dashed Brow <br>Air Fit Velvet Ver 2 <br> Đỏ tươi </p> </a>
+                    <div class="product-price"> 199.000đ </div>
+                    <a class="a-sao"> &#11088;&#11088;&#11088;&#11088;&#11088; 1490 đánh giá</a>
+                </div>
+            </div>
+        </li>
+        <li> 
+            <div class="product-item">
+                <div class="product-top">
+                    <a href="mon26.html" class="product-thumb">
+                        <img src="img/Son Black Rouge Air Fit Velvet Tint Ver 5 Màu A25.jpg" alt="">
+                    </a>
+                    <!--Mua ngay -->
+                    <a href="mon26.html" class="buy-now">Mua ngay </a>
+                </div>
+                <div class="product-info">
+                    <a href="mon26.html" class="product-cat"> blackground </a>
+                    <a href="mon26.html" class="product-name"> <p>Son Black Rouge Air Fit <br>Velvet Tint <br>Ver 5 Màu A25</p> </a>
+                    <div class="product-price"> 199.000đ </div>
+                    <a class="a-sao"> &#11088;&#11088;&#11088;&#11088;&#11088; 1490 đánh giá</a>
+                </div>
+            </div>
+        </li>
+        <li> 
+            <div class="product-item">
+                <div class="product-top">
+                    <a href="mon21.html" class="product-thumb">
+                        <img src="img/Son Kem Lì Black Rouge Air Fit Velvet Tint A26 Winter Moon.jpg" alt="">
+                    </a>
+                    <!--Mua ngay -->
+                    <a href="mon27.html" class="buy-now">Mua ngay </a>
+                </div>
+                <div class="product-info">
+                    <a href="mon27.html" class="product-cat"> blackground </a>
+                    <a href="mon27.html" class="product-name"><p>Son Kem Lì Black Rouge Air <br>Fit Velvet<br> Tint A26 Winter Moon</p></a>
+                    <div class="product-price"> 199.000đ </div>
+                    <a class="a-sao"> &#11088;&#11088;&#11088;&#11088;&#11088; 1490 đánh giá</a>
+                </div>
+            </div>
+        </li>
+        </ul>
+    <p>
+        THÔNG TIN SẢN PHẨM<br>
+        Son Kem Black Rouge Double Layer Over Velvet Ver.2 31.6g<br>
+        *Khối lượng tịnh: 31.6g<br>*Xuất xứ: Hàn Quốc.<br>Tiếp nối sự thành công của BST Double Layer Over Velvet
+         - Signature, Black Rouge đã trở lại với BST 𝐃𝐨𝐮𝐛𝐥𝐞 𝐋𝐚𝐲𝐞𝐫 𝐎𝐯𝐞𝐫 𝐕𝐞𝐥𝐯𝐞𝐭 𝐕𝐞𝐫 𝟐 - 𝐆𝐚𝐥𝐥𝐞𝐫𝐲 với 8 sắc son mang 
+         phong cách và thần thái khác biệt. BST Gallery với thiết kế đơn sắc cùng điểm nhấn ánh tím khói thể hiện 
+         sự tinh tế, hiện đại và đầy cá tính, hệt như một tác phẩm nghệ thuật . Thỏi son nhỏ gọn chắc chắn sẽ là 
+         một item không thể thiếu trong túi makeup của các bae đấy nha~ <br>
+    </p>
+    <img src="imgSp/sp1.jpg" style="margin-left: 15%;">
+    <p>THIẾT KẾ <br>
+        Thiết kế bắt mắt với tông màu tím pastel pha chút ánh xám nhạt độc quyền của Black Rouge <br>
+        Điểm nhấn nằm ở phần logo được khắc chìm trên thân son giúp thấy được màu son bên trong<br>
+        Nhỏ gọn, tiện lợi khi mang đi làm, đi học hoặc đi du lịch 
+    </p>
+    <p>THÀNH PHẦN<br> Vitamin chứa trong các loại quả<br> 8 loại hyaluronic acid  <br>
+    Hàm lượng dưỡng chất có tính dưỡng ẩm cao giúp đôi môi ẩm mượt, không bị khô ngay cả khi không dùng son dưỡng.
+    </p>
+    <img src="imgSp/sp2.jpg" style="margin-left: 15%;">
+    <p>MÙI HƯƠNG<br>Mùi hương ngọt ngào tươi mới của trái vải cùng hương vanila dịu nhẹ</p>
+    <p>CÔNG DỤNG<br>Double layering<br>Velvet Fit: Chất velvet ẩm mượt, nhẹ môi với kết cấu nhung lì tăng cường cảm giác mịn mướt và khả năng lên màu cực chuẩn giúp màu sắc tự nhiên, sinh động<br>
+        Film Over: Lớp màng mỏng bao phủ phía trên, giúp son không bị lem hay trôi trong thời gian dài, giữ được màu sắc nguyên vẹn<br>
+        Độ bền màu và độ lì của son tốt khi màu sắc của son vẫn được giữ nguyên ngay cả khi đã thoa son được một thời gian dài<br>
+        Lip treatment: Bổ sung các thành phần dinh dưỡng và dưỡng ẩm giúp môi không bị bong tróc</p>
+        <footer class="section-p1">
+            <div class="col">
+                <h4>Contact</h4>
+                <p><strong>Địa chỉ:</strong>Lầu 5, 387-389 Hai Bà Trưng Quận 3 TP HCM</p>
+                <p><strong>Hotline:</strong>1900636467</p>
+                <p><strong>Email:</strong>cskh@fahasa.com.vn</p>
+               
+            </div>
+            <div class="col">
+                <h4>Dịch vụ</h4>
+                <a href="điều khoản.html">Điều khoản sử dụng</a>
+                <a href="bảo mật.html">Chính sách bảo mật thông tin cá nhân</a>
+                <a href="bảo mật.html">Chính sách bảo mật thanh toán</a>
+                <a href="#">Hệ thống trung tâm - cửa hàng</a>
+            </div>
+            <div class="col">
+                <h4>HỖ TRỢ</h4>
+                <a href="chính sách đổi trả hàng.html">Chính sách đổi - trả - hoàn tiền</a>
+                <a href="#">Chính sách bảo hành - bồi hoàn</a>
+                <a href="#">Phương thức thanh toán và xuất HĐ</a>
+                <a href="formDki.html">Tạo mới tài khoản</a>
+            </div>
+            <div class="col install">
+                <h4>Tải ứng dụng</h4>
+                <p>Từ App Store hoặc Google Play</p>
+                <div class="row">
+                    <img src="img/Appstore-logo.png" >
+                    <img src="img/Google-play-logo.jpg">
+                </div>
+                <p>Cổng thanh toán</p>
+                <div class="met">
+                <img src="img/visa.png">
+                <img src="img/mastercard.jfif">
+                <img src="img/american.png">
+                <img src="img/ShopeePay.webp">
+               
+                </div>
+            </div>
+            <div class="copyright">
+                <p>@ 2023 Đồ án Web HUFI</p>
+            </div>
+        </footer>
+</body>
+</html>

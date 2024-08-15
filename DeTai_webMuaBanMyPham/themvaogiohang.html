@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" type="css" href="mon.css">
+    <link rel="stylesheet" type="text/css" href="footer.css">
+</head>
+<body>
+    <style>
+        .nen{
+            background-color:#f09e7f;
+            height: 200px;;
+            color: black;
+            font-size: 20px;
+        }
+        .nen1{
+            color: black;
+        }
+        .shopping{
+        border-radius: 10px;
+        text-align: center;
+        color:white;
+        background-color: #f38157;
+        width: 250px;
+        padding:10px;
+        height:20px;
+        font-size: 20px;
+    }
+    .shopping:hover{
+        background-color: rgb(240, 240, 21);
+        text-align: center;
+        color:orangered;
+        font-size: 20px;
+        cursor: pointer;
+        box-shadow: 0 0 3px forestgreen;
+    }
+    .gchan{
+        text-decoration: none;
+    }
+    </style>
+    <form name="F1" method="get" style="border:#666 solid 1px;width: 600px; margin:0 auto; border-radius:5px">  
+        <table style="margin:0 auto;" class="nen">
+            <tr align="center" bgcolor="#f7ab8f">
+                <td colspan="6" class="nen1"><h3>THÔNG TIN NGƯỜI GỬI</h3></td>
+            </tr>
+            <tr>
+                <td colspan="1"> <label for="name">Nhập tên của bạn:</label></td>
+                <td><input type="text" placeholder ="nhập tên" size="70px"/></td>
+            </tr>
+            <tr>
+                <td> Địa Chỉ khách hàng</td>
+                <td><input type="text" placeholder ="Nhập dịa chỉ" size="70px"/></td>
+            </tr>
+            <tr>
+                <td> Số Điện Thoại</td>
+                <td> <input type="text" placeholder="nhập số điện thoại"></td>
+            </tr>
+            <tr>
+                <td>Số Lượng:</td>
+                <td><input type="number" placeholder ="Nhập số lượng" size="70xp"/></td>
+            </tr>
+            <tr>
+                <td>Nhận Hàng: </td>
+                <td >
+                    <table>
+                        <td > <input type="radio" name="rdUser" />thanh toán khi nhận hàng</td>
+                        <td ><input type="radio" name="rdUser" />thanh toán ngay bằng thẻ</td>
+                    </table>
+                </td>
+            </tr>
+            <tr align="center" class="shopping" >
+                <td colspan="2"><a href="sản phẩm.html" class="gchan"><h3>Đặt Hàng Ngay</h3></a></td>
+            </tr>
+        </table>
+    </form>
+</body>
+</html>

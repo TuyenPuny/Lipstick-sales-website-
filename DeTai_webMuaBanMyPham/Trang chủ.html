@@ -1,0 +1,395 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trang chủ</title>
+    <link rel="stylesheet" type="text/css" href="trangchu.css">
+    <link rel="stylesheet" href="menu.css">
+    <link rel="stylesheet" href="./Team.css">
+    <link rel="stylesheet" type="text/css" href="footer.css">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css">
+    </head>
+<body>
+    <div class="header">
+        <img src="img/doi4.PNG">
+        <nav>
+            <ul>
+                <li><a href="Trang chủ.html" title="Trang chủ"><i class="far fa-home"></i>  Trang chủ</a></li>
+                <li><a href="sản phẩm.html" title="Sản phẩm"><i class="far fa-shopping-cart"></i>    Sản phẩm</a>
+                    <ul>
+                        <li><a href="son thỏi.html">Son thoi</a></li>
+                        <li><a href="son kem.html">Son kem</a></li>
+                        <li>
+                            <a href="son dưỡng.html">Son dưỡng </a>
+                        </li>
+                        <li><a href="Son tint.html">Son tint</a></li>
+                    </ul>
+                </li>
+                <li><a href="ChinhSachDamBao.html" title="Ưu đãi"><i class="far fa-gift"></i>Chính sách</a>
+                    <ul>
+                        <li><a href="ChinhSachDamBao.html" title="Mã khuyến mãi">Đổi trả tiền</a></li>
+                        <li><a href="ChinhSachDamBao.html" title="Đánh giá">Điều khoản</a></li>
+                        <li><a href="ChinhSachDamBao.html" title="Đánh giá">Bảo mật</a></li>
+                    </ul>
+                </li>
+                <li><a href="LienHe.html" title="Liện hệ"><i class="far fa-phone"></i>  Liên hệ</a>
+                    <ul>
+                        <li><a href="LienHe.html" >Sđt: 03356863**</a></li>
+                        <li><a href="LienHe.html" >Gmai: 03356863**</a></li>
+                        <li><a href="LienHe.html" >Địa chỉ: 140 Lê Trọng Tấn</a></li>
+                    </ul>
+                </li>
+                <li><a href="formDki.html" ><i class="far fa-address-card"></i>  Đăng ký</a></li>
+                <li>
+                    <div class="search-box">
+                        <input class="search-box-input" type="text" placeholder="Bạn muốn tìm gì?">
+                        <i class='far fa-search'></i>
+                    </div>
+                </li>
+                <li><a href="" ><i class="far fa-shopping-cart"></i> </a></li>
+            </ul>
+        </nav>
+    </div>
+
+    <div class="container">
+        <div class="banner">
+            <div class="image">
+                <img id="img" onclick="changeimg()" src="img/banner2.PNG">
+        
+            </div>
+            <script>
+                var index = 1;
+                function changeimg (){
+                    var imgs = ["img/banner2.PNG","imgSp/slide1.jpg",
+                    "imgSp/banner.PNG","imgSp/slide3.jpg"];
+                    document.getElementById("img").src = imgs[index];
+                    index++;
+                    if(index == 4)
+                        index = 0;
+                }
+                setInterval(changeimg,2000)
+                $("image").hide();
+                $("image").eq(stt).fadeIn(500);
+            </script>
+            <marquee>Son là vũ khí quan trọng nhất trong túi đồ trang điểm của một cô gái. Son có khả năng biến đổi vẻ bề ngoài lẫn tâm trạng của bạn, đồng thời khơi gợi sự ngưỡng mộ từ mọi người xung quanh dành cho bạn</marquee> 
+        </div>
+    </div>
+    <!--<section class="wrapper">
+        <i class="fa-solid fa-arrow-left button" id="prev"></i>
+        <div class="image-container">
+          <div class="carousel">
+            <img src="img/banner2.PNG">
+            <img src="img/banner4.jpg">
+            <img src="img/banner5.webp">
+            <img src="img/banner6.jpg">
+          </div>
+          <i class="fa-solid fa-arrow-right button" id="next"></i>
+        </div>
+      </section>
+    <script src="jsSlideShown.js"></script>-->
+    <div class="banner">
+        <p>Black Rouge là một trong những thương hiệu mỹ phẩm đến từ đất nước Hàn Quốc, được ra đời từ năm 2016 với rất nhiều các idol nổi tiếng làm gương mặt đại diện cho thương hiệu này.Tuy là một thương hiệu mỹ phẩm mới ra mắt những năm gần đây nhưng đã chinh phục thị trường nhờ chất lượng, giá cả hợp lí và sự sáng tạo mới lạ trong từng sản phẩm tạo sự bất ngờ ngạc nhiên cho mỗi lần ra mắt. Ngoài những dòng son gây bão trên thị trường thì hãng còn cho ra các dòng sản phẩm làm đẹp khác như: phấn mắt, highlight, nhũ mắt,…</p>
+        <button><a href="xem thêm.html">Xem thêm</a></button>
+    </div>
+    <h1>CÁC SẢN PHẨM NỖI BẬT NHẤT</h1>
+    <div class="center">
+        <img src="img/h2.jpg" width="150px" height="100px">
+    </div>
+    <div class="dsimg">
+        <div class="card"></div>
+        <div class="card1"></div>
+        <div class="card2"></div>
+        <div class="card3"></div> 
+    </div>
+    <div class="menu-box">
+        <a href="spUD3.html">
+        <div class="menu-cart">
+            <div class="menu-image">
+                <img src="img/son 1.jpg" alt="">
+            </div>
+            <div class="menu-info">
+                <h4>Son Black Rouge Double 2023 life màu B2<br></h4>
+                <h2><del>299.000đ</del>  199.999đ</h2><hr>
+                <p> &#11088;&#11088;&#11088;&#11088;&#11088; 750 đánh giá</p>
+                <div class="menu-btn">
+                    <p>Mua ngay</p>
+                </div>
+            </div>
+        </div></a>
+        <a href="spUD1.html">
+        <div class="menu-cart">
+            <div class="menu-image">
+                <img src="img/son 2.jpg" alt="">
+            </div>
+            <div class="menu-info">
+                <h4>Son Black Rouge màu AL1 2023<br></h4>
+                <h2><del>330.000đ</del>  265.999đ</h2><hr>
+                <p> &#11088;&#11088;&#11088;&#11088;&#11088; 530 đánh giá</p>
+                <div class="menu-btn">
+                    <p>Mua ngay</p>
+                </div>
+            </div>
+        </div></a>
+        <a href="spUD3.html">
+        <div class="menu-cart">
+            <div class="menu-image">
+                <img src="img/son-kem-black-rouge-air-fit-velveta10.jpg" alt="">
+            </div>
+            <div class="menu-info">
+                <h4>Son Black Rouge 2023 B65<br></h4>
+                <h2><del>250.000đ</del>  199.999đ</h2><hr>
+                <p> &#11088;&#11088;&#11088;&#11088;&#11088; 360 đánh giá</p>
+                <div class="menu-btn">
+                    <p>Mua ngay</p>
+                </div>
+            </div>
+        </div></a>
+        <a href="spUD2.html">
+        <div class="menu-cart">
+            <div class="menu-image">
+                <img src="img/son dưỡng 2.jfif" alt="">
+            </div>
+            <div class="menu-info">
+                <h4>Son Black Rouge màu AL3 2023<br></h4>
+                <h2><del>450.000đ</del>  399.999đ</h2><hr>
+                <p> &#11088;&#11088;&#11088;&#11088;&#11088; 730 đánh giá</p>
+                <div class="menu-btn">
+                    <p>Mua ngay</p>
+                </div>
+            </div>
+        </div></a>
+        <a href="spUD1.html">
+        <div class="menu-cart">
+            <div class="menu-image">
+                <img src="img/son 5.jpg" alt="">
+            </div>
+            <div class="menu-info">
+                <h4>Son Black Rouge Double màu A35<br></h4>
+                <h2><del>290.000đ</del>  249.999đ</h2><hr>
+                <p> &#11088;&#11088;&#11088;&#11088;&#11088; 530 đánh giá</p>
+                <div class="menu-btn">
+                    <p>Mua ngay</p>
+                </div>
+            </div>
+        </div></a>
+        <a href="spUD2.html">
+        <div class="menu-cart">
+            <div class="menu-image">
+                <img src="img/logo1.jpg" alt="">
+            </div>
+            <div class="menu-info">
+                <h4>Son Black Rouge Double life 801<br></h4>
+                <h2><del>390.000đ</del>  349.999đ</h2><hr>
+                <p> &#11088;&#11088;&#11088;&#11088;&#11088; 256 đánh giá</p>
+                <div class="menu-btn">
+                    <p>Mua ngay</p>
+                </div>
+            </div>
+        </div></a>
+        <a href="spUD3.html">
+        <div class="menu-cart">
+            <div class="menu-image">
+                <img src="imgSp/sp3.png" alt="">
+            </div>
+            <div class="menu-info">
+                <h4>Son Black Rouge Double life 086<br></h4>
+                <h2><del>299.000đ</del>  249.999đ</h2><hr>
+                <p> &#11088;&#11088;&#11088;&#11088;&#11088; 836 đánh giá</p>
+                <div class="menu-btn">
+                    <p>Mua ngay</p>
+                </div>
+            </div>
+        </div></a>
+        <a href="spUD1.html">
+        <div class="menu-cart">
+            <div class="menu-image">
+                <img src="imgSp/sp1.jpg" alt="">
+            </div>
+            <div class="menu-info">
+                <h4>Son Black Rouge Double A71<br></h4>
+                <h2><del>500.000đ</del>  399.999đ</h2><hr>
+                <p> &#11088;&#11088;&#11088;&#11088;&#11088; 368 đánh giá</p>
+                <div class="menu-btn">
+                    <p>Mua ngay</p>
+                </div>
+            </div>
+        </div></a>
+    </div>
+    <p><b><i><u>Lưu ý:</u></i></b></p><br><br>
+        <p><b>Nội dung: </b>Ưu đãi combo áp dụng cho một số sản phẩm chọn lọc và chỉ áp dụng giảm giá cho sản phẩm có giá trị thấp nhất.<br>
+            Không áp dụng đồng thời với bất kỳ chương trình ưu đãi nào khác.</p><br>
+    <h3>Thông tin sản phẩm</h3>
+    <p>Tiếp nối sự thành công của BST Double Layer Over Velvet - Signature, Black Rouge đã trở lại với BST Double Layer Over Velvet - Gallery với 8 sắc son mang phong cách và thần thái khác biệt. BST Gallery với thiết kế đơn sắc cùng điểm nhấn ánh tím khói thể hiện sự tinh tế, hiện đại và đầy cá tính, hệt như một tác phẩm nghệ thuật </p><br>
+    <p><strong>Son Kem Lì Black Rouge Double Layer Over Velvet </strong>- Mẫu Mới 2022 sắc son của mùa hè đầy tươi trẻ với 06 màu son trải dài từ tông ấm đến lạnh từ Âu sang Á, chuẩn thần thái mà các cô nàng thuộc hệ Lipstick-holic không thể bỏ qua - 6 tông màu cân đủ các thể loại makeup-look, cho gương mặt bừng sáng làm chủ tâm điểm.</p><br>
+    <div class="center">
+    <div class="khungcolor">
+        <div class="box">
+            <div class="inner">
+              <span>Các ưu đãi</span>
+            </div>
+        </div><br>
+        <div class="khungUd">
+            <img src="img/vc1.jpeg">
+            <b>Giảm 30% son lì</b><br>Giảm tối đa 30.000đ cho đơn 0đ<br><hr >
+            <button>Dùng ngay</button>
+        </div>
+        <div class="khungUd">
+            <img src="img/vc2.jpg">
+            <b>Giảm 30% son kem</b><br>Giảm tối đa 15.000đ cho đơn từ 20.000đ<br><hr >
+            <button>Dùng ngay</button>
+        </div>
+        <div class="khungUd">
+            <img src="img/voucher5.jpg">
+            <b>Giảm 20% son dưỡng</b><br>Giảm tối đa 25.000đ cho đơn 50.000đ<br><hr >
+            <button>Dùng ngay</button>
+        </div>
+        <div class="khungUd">
+            <img src="img/vc4.jpg">
+            <b>Giảm 50% son kem</b><br>Giảm tối đa 30.000đ cho đơn 0đ<br><hr >
+            <button>Dùng ngay</button>
+        </div>
+        <div class="khungUd">
+            <img src="img/voucher7.jpg">
+            <b>Giảm 20% son thỏi</b><br>Giảm tối đa 25.000đ cho đơn 50.000đ<br><hr >
+            <button>Dùng ngay</button>
+        </div>
+    </div></div>
+    <div class="center">
+        <div id="blog"><hr>
+        <canvas id="myCanvas" width="350" height="50"></canvas>
+        <script>
+            var canvas = document.getElementById("myCanvas");
+            var ctx = canvas.getContext('2d');
+            ctx.font = "30px arial"; 
+            var gradient = ctx.createLinearGradient(0, 0, 100, 150); 
+            gradient.addColorStop(0, "#FFCCFF");
+            gradient.addColorStop(1, "#FF9966"); 
+            ctx.fillStyle = gradient;
+            ctx.fillText("SẢN PHẨM MỚI NHẤT", 10, 50); 
+        </script><hr></div><br>
+        <table>
+            <tr>
+              <td>
+                <div class="display-container">
+                  <img class="mySlides3" src="img/son 3.jpg">
+                  <img class="mySlides3" src="img/son 4.jpg">
+                  <img class="mySlides3" src="img/son thỏi.png">
+                  <img class="mySlides3" src="img/son-thoi-black-rouge-wearable-velvet-lipstick-7.png">
+                  <button class="image-button button-left" onclick="plusDivs(-1)">&#10094;</button>
+                  <button class="image-button button-right" onclick="plusDivs(1)">&#10095;</button>
+                </div>
+              <script>
+                var slideIndex = 1;
+                showDivs(slideIndex);
+                function plusDivs(n) {
+                  showDivs(slideIndex += n);
+                }
+                function currentDiv(n) {
+                  showDivs(slideIndex = n);
+                }
+                function showDivs(n) {
+                  var i;
+                  var x = document.getElementsByClassName("mySlides3");
+                  var dots = document.getElementsByClassName("image-badge");
+                  if (n > x.length) {slideIndex = 1}
+                  if (n < 1) {slideIndex = x.length}
+                  for (i = 0; i < x.length; i++) {
+                    x[i].style.display = "none";  
+                  }
+                  for (i = 0; i < dots.length; i++) {
+                    dots[i].className = dots[i].className.replace(" badge-white", "");
+                  }
+                  x[slideIndex-1].style.display = "block";  
+                  dots[slideIndex-1].className += " badge-white";
+                }
+              </script>
+              </td>
+              <td>
+                <h1>5 MÀU SON - 5 KHÍ CHẤT</h1>
+                <p><b>𝑾𝑳𝟎𝟏- 𝑴𝒖𝒔𝒆 𝑷𝒊𝒏𝒌 </b> Sắc hồng san hô<br>Khoác lên mình sắc hồng trẻ trung, năng động khiến gương mặt bừng sáng.</p></li>
+                <p><b>𝑾𝑳𝟎𝟐 - 𝑭𝒖𝒄𝒉𝒔𝒊𝒂 𝑹𝒐𝒔𝒚 </b>- Sắc hồng MLBB mê ly như đóa hồng nở rộ. <br>Một sắc hồng phấn nhẹ nhàng pha chút sắc đỏ khiến đôi môi luôn tươi tắn tự nhiên.</p></li>
+                <p><b>𝑾𝑳𝟎𝟑 - 𝑫𝒂𝒇𝒇𝒐𝒅𝒊𝒍 𝑺𝒖𝒏𝒔𝒆𝒕 </b> - Sắc cam ấm cổ điển<br>Màu cam ấm pha chút ánh đỏ mang hơi hướng trữ tình lãng mạn.            </p></li>
+                <p><b>𝑾𝑳𝟎𝟒 - 𝑪𝒂𝒔s𝒆𝒍 𝑩𝒓𝒊𝒄𝒌 </b> - Sắc đỏ gạch pha chút nâu đất.<br>Sắc đỏ gạch nổi bật đầy quyến rũ nhưng cũng không kém phần tươi mới.</p></li>
+                <p><b>𝑾𝑳𝟎𝟓 - 𝑺𝒄𝒂𝒓𝒍𝒆𝒕 𝑩𝒓𝒐𝒘𝒏 </b> - Sắc nâu trầm rực lửa đam mê <br>Tone nâu đỏ trầm ấm lan tỏa khí chất sắc sảo, sang trọng </p></li>
+              </td>
+            </tr>
+        </table><br>
+        <div class="team">
+            <div class="team-box">
+                <div class="profile">
+                    <img src="img/linh.jpg" alt="">
+                    <div class="info">
+                        <p class="bio">Dương Thùy Linh<br>12ĐHTH17</br>Bình Định</p>
+                    </div>
+                </div>
+                <div class="profile">
+                    <img src="img/khang.jpg" alt="">
+                    <div class="info">
+                        <p class="bio">Đỗ Phúc Khang<br>12ĐHTH</br>Tây Ninh</p>
+                    </div>
+                </div>
+                <div class="profile">
+                    <img src="img/43.jpg" alt="">
+                    <div class="info">
+                        <p class="bio">Ngô Thị Thanh Tuyền<br>12ĐHTH15</br>Bình Thuận</p>
+                    </div>
+                </div>
+                
+            </div>
+    
+        </div>
+        <br><h1>Mua hàng và Ưu đãi thành viên</h1><br>
+        <div class="container">
+            <div class="item" title="Đăng nhập/ký"><a href="formDnhap.html"><img src="img/đăng ký.jpg" width="200px" height="200px"></a></div>
+            <div class="item" title="Ưu đãi "><a href="#khungcolor"><img src="img/ưu đãi.png" width="200px" height="200px"></a></div>
+            <div class="item" title="Thanh toán"><a href=""><img src="img/thanh toán.png" width="200px" height="200px"></a></div>
+            <div class="item" title="Liên hệ "><a href="LienHe.html"><img src="img/liên hệ.png" width="200px" height="200px"></a></div>
+            <div class="item" title="Đánh giá"><a href="Đánhgiá.html"><img src="img/đánh giá.jpg" width="200px" height="200px"></a></div>
+        </div>   
+    </div>
+    <footer class="section-p1">
+        <div class="col">
+            <h4>Contact</h4>
+            <p><strong>Địa chỉ:</strong>Lầu 5, 387-389 Hai Bà Trưng Quận 3 TP HCM</p>
+            <p><strong>Hotline:</strong>1900636467</p>
+            <p><strong>Email:</strong>cskh@fahasa.com.vn</p>
+           
+        </div>
+        <div class="col">
+            <h4>Dịch vụ</h4>
+            <a href="điều khoản.html">Điều khoản sử dụng</a>
+            <a href="bảo mật.html">Chính sách bảo mật thông tin cá nhân</a>
+            <a href="bảo mật.html">Chính sách bảo mật thanh toán</a>
+            <a href="#">Hệ thống trung tâm - cửa hàng</a>
+        </div>
+        <div class="col">
+            <h4>HỖ TRỢ</h4>
+            <a href="chính sách đổi trả hàng.html">Chính sách đổi - trả - hoàn tiền</a>
+            <a href="#">Chính sách bảo hành - bồi hoàn</a>
+            <a href="#">Phương thức thanh toán và xuất HĐ</a>
+            <a href="formDki.html">Tạo mới tài khoản</a>
+        </div>
+        <div class="col install">
+            <h4>Tải ứng dụng</h4>
+            <p>Từ App Store hoặc Google Play</p>
+            <div class="row">
+                <img src="img/Appstore-logo.png" >
+                <img src="img/Google-play-logo.jpg">
+            </div>
+            <p>Cổng thanh toán</p>
+            <div class="met">
+            <img src="img/visa.png">
+            <img src="img/mastercard.jfif">
+            <img src="img/american.png">
+            <img src="img/ShopeePay.webp">
+           
+            </div>
+        </div>
+        <div class="copyright">
+            <p>@ 2023 Đồ án Web HUFI</p>
+        </div>
+    </footer>
+</body>
+</html>

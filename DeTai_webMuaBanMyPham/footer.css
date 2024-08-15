@@ -1,0 +1,70 @@
+
+footer{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    background-color: #3c0303;
+  }
+  footer .col{
+    color:#ade9ff;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-bottom: 20px;
+    padding-left: 20px;
+   
+  }
+  footer .col:hover{
+    color:#c6c9f5;
+  
+  }
+  footer .logo{
+    margin-bottom: 30px;
+  }
+  footer h4{
+    font-size: 14px;
+    padding-bottom: 15px;
+  }
+  footer p{
+    font-size: 16px;
+    margin: 0 0 8px 0;
+    color:beige;
+  }
+  footer a{
+    font-size:  16px;
+    text-decoration: none;
+    color: #ebe6e7;
+    margin: 10px;
+  }
+  footer h4{
+    font-size:  20px;
+    text-decoration: none;
+    color: #ee45e2;
+  text-align: center;
+  }
+  footer h4:hover{
+    color:#e00cb9;
+  }
+  footer .follow .icon {
+    padding-right: 4px;
+  color:#fff;
+  width:50px;
+  height:40px;
+  }
+  footer .install .row img{
+    border: 1px solid #088178;
+    border-radius: 8px;
+    width:90px;
+    height:60px;
+  }
+  footer .install img{
+    margin:  10px 0 15px 0;
+  }
+  footer .met img{
+   width:80px;
+   height:60px;
+  }
+  footer .copyright{
+  width:100%;
+    text-align: center;
+  }

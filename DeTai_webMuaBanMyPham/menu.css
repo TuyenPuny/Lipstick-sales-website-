@@ -1,0 +1,92 @@
+
+.menu-box{
+    width: 95%;
+    display: grid;
+    grid-template-columns: 1fr 0.5fr 1fr 0.5fr;
+    background-color: #f6f2f1;
+    margin-bottom: 20px;
+}
+
+.menu-cart{
+    width: 260px;
+    height: 430px;
+    padding-top: 5px;
+    box-shadow: 0 0 10px rgba(241, 109, 99, 0.2);
+    background-color: rgb(248, 222, 211);
+    margin: 10px;
+}
+.menu-cart:hover{
+    cursor: pointer;
+    box-shadow: 0 0 10px red;
+    transform: (1.01);
+}
+.menu-image{
+    width: 250px;
+    height: 245px;
+    margin: 0 auto;
+    overflow: hidden;
+}
+.menu-image img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    transition: 0.3s;
+}
+.menu-image:hover img{
+    transform: scale(1.1);
+}
+.menu-info h2{
+    text-align: center;
+    margin-top:20px;
+    font-size: 20px;
+    color: #ff4d00;
+}
+.menu-info h4{
+    text-align: center;
+    margin-top: 15px;
+    line-height: 21px;
+    font-family: 'Baloo Paaji 2', cursive;
+    font-size: 20px;
+    color: black;
+    text-decoration: none;
+}
+.menu-info p{
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 5px;
+    font-size: 15px;
+    text-decoration: none;
+}
+.menu-info hr{
+    border-bottom: 1px solid #ed4f24;
+    box-shadow: 0 20px 20px -20px #f7b88e;
+    text-align: center;
+    margin-top: 5px;
+    max-width: 100px;
+    text-decoration: none;
+}
+
+.menu-btn p{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    color: black;
+    background: rgb(240, 143, 143);
+    padding: 8px 10px;
+    margin: 0 80px;
+    text-decoration: none;
+}
+.menu-btn p:hover{
+    background: red;
+    transform: scale(1.1);
+}
+
+.Attend{
+    margin-left:20%;
+    margin-right: 20%;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-size:20px;
+  }

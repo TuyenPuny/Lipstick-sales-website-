@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>giohang</title>
+    <style>
+        .boxcenter {
+            width: 80%;
+            margin: 0 auto;
+            text-align: center;
+        }
+        
+        .box1 {
+            margin-right: 4%;
+        }
+        
+        .box2,
+        .box1 {
+            float: left;
+            width: 100%;
+        }
+        
+        h1 {
+            text-align: center;
+        }
+        
+        input {
+            background-color: #CCC;
+            border-radius: 10px;
+            padding: 5px 20px;
+            text-align: center;
+            font-weight: bold;
+        }
+        
+        #dssp img {
+            height: 80px;
+        }
+        
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        
+        th {
+            background-color: #CCC;
+        }
+        
+        th,
+        td {
+            border: 1px #999 solid;
+            padding: 5px 10px;
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="boxcenter">
+        <div class="box1">
+            <h1>Giỏ Hàng</h1>
+            <table>
+                <tr>
+                    <th>Mã SP</th>
+                    <th>Hình</th>
+                    <th>Tên</th>
+                    <th>Đơn giá</th>
+                    <th>Số lượng</th>
+                    <th>tổng giá</th>
+                    <th>Đặt hàng</th>
+                </tr>
+                <tbody id="dssp">
+                    <tr>
+                        <td>H01</td>
+                        <td><img src="./img/mới.jpg" alt=""></td>
+                        <td>Son Kem Lì Dashed Brow Air<br> Fit Velvet Ver 2  Đỏ tươi</td>
+                        <td>129.800₫</td>
+                        <td>1</td>
+                        <td>129.800₫</td>
+                        <td><input type="button" value="xóa" onclick="xoa(this)"></td>
+                    </tr>
+                    <tr>
+                        <td>H02</td>
+                        <td><img src="./img/son 2.jpg" alt=""></td>
+                        <td>Son tint Black Rouge Half<br> & Half Water Glow Season</td>
+                        <td>199.000đ</td>
+                        <td>2</td>
+                        <td>398.000đ</td>
+                        <td><input type="button" value="xóa" onclick="xoa(this)"></td>
+                    </tr>
+                    <tr>
+                        <td>H03</td>
+                        <td><img src="./img/son 4.jpg" alt=""></td>
+                        <td>Son thỏi Black Rouge Wearable<br> Velvet Lipstick</td>
+                        <td>129.000₫</td>
+                        <td>3</td>
+                        <td>387.000₫</td>
+                        <td><input type="button" value="xóa" onclick="xoa(this)"></td>
+                    </tr>
+                    <tr>
+                        <td>H04</td>
+                        <td><img src="./img/Son Black Rouge Air Fit Velvet Tint Ver 5 Màu A25.jpg" alt=""></td>
+                        <td>Son Black Rouge Air Fit<br> Velvet Tint Ver 5</td>
+                        <td>119.000₫</td>
+                        <td>2</td>
+                        <td>238.000đ</td>
+                        <td><input type="button" value="xóa" onclick="xoa(this)"></td>
+                    </tr>
+                    <tr>
+                        <td>H05</td>
+                        <td><img src="./img/Son Black Rouge Cream Matt Rouge Color CM07.jfif" alt=""></td>
+                        <td>Son Black Rouge Cream <br> && Rouge Color CM07k</td>
+                        <td>108.000₫</td>
+                        <td>1</td>
+                        <td>108.000đ</td>
+                        <td><input type="button" value="xóa" onclick="xoa(this)"></td>
+                    </tr>
+                    <tr>
+
+                        <th colspan="5">Tổng đơn hàng</th>
+                        <th colspan="1">1.260.000đ đ</th>
+                        <th colspan="1"><input type="button" value="Thanh Toán" onclick="thanhtoan(this)"></th>
+                    </tr>
+                    <tr>
+                        <th colspan="7"><a href="sản phẩm.html"> Trở lại Trang Sản Phẩm</a></th>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+    <script>
+        function xoa(x) {
+            var tr = x.parentElement.parentElement;
+            tr.remove();
+        }
+        function thanhtoan(x) {
+            alert("bạn đã thanh toán thành công với giá trị đơn hàng là 1.260.000đ")
+        }
+    </script>
+</body>
+
+</html>
